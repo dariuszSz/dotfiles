@@ -52,4 +52,8 @@ function parse_git_dirty {
 	fi
 }
 
-export PS1="\[\e[31m\]\\$\[\e[m\] \[\e[35m\]\u\[\e[m\] \[\e[36m\]\h\[\e[m\] \[\e[33m\]\W\[\e[m\] \t \[\e[32m\]\`parse_git_branch\`\[\e[m\] \`nonzero_return\` "
+# export PS1="\[\e[31m\]\\$\[\e[m\] \[\e[35m\]\u\[\e[m\] \[\e[36m\]\h\[\e[m\] \[\e[33m\]\W\[\e[m\] \t \[\e[32m\]\`parse_git_branch\`\[\e[m\] \`nonzero_return\` "
+
+export PATH="$PATH:/usr/local/bin"
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
